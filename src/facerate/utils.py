@@ -56,10 +56,6 @@ def compress_image_bytes(image_bytes, max_size_kb=100, step=5, quality=85):
 
         previous_size = current_size  # Update previous size to current size
 
-    # Write the BytesIO stream to a file
-    with open("/Users/danila/Projects/facerate/test.jpg", 'wb') as f_out:
-        f_out.write(img_bytes.getvalue())
-
     return img_bytes
 
 
